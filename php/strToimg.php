@@ -6,7 +6,7 @@
     public function strToimg()
     {
         header("Content-type:text/html;charset=utf-8");
-        $bigImgPath = "图片的路径";
+        $bigImgPath = "图片11的路径";
         
         $img = imagecreatefromstring(file_get_contents($bigImgPath));
      
