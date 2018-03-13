@@ -1,0 +1,40 @@
+<extend name="Base/common" />
+<block name="body">
+    <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">添加微信</h1>
+        </div>
+        
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+				<div class="well">
+					<div id="myTabContent" class="tab-content">
+					<div class="tab-pane active in" id="home">
+					<form id="tab" action="" method="post" enctype="multipart/form-data">
+						<label>t</label>
+						<select name="t">
+						<volist name="user_t" id="vo">
+						   <option value="{$vo}" >{$vo}</option>
+						</volist>
+						</select>
+						<label>微信号</label>
+						<input type="text" class="input-xlarge" name="wx">
+						<label>二维码</label>
+						<input name="qrcode" type="file" />
+						<div>	
+							<button class="btn btn-primary" type="submit">添加</button>
+						</div>
+					</form>
+					</div>
+				  </div>
+				</div>            
+            </div>
+        </div>
+    </div>
+
+</block>
+

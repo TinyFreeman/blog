@@ -1,0 +1,57 @@
+<extend name="Base/common" />
+<block name="body">
+    <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">编辑学堂</h1>
+        </div>
+        
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+				<div class="well">
+					<div id="myTabContent" class="tab-content">
+					<div class="tab-pane active in" id="home">
+					<form id="tab" action="{:U('editClass')}" method="post" enctype="multipart/form-data">
+						<label>文章分类</label>
+						<select name="cate_id">
+						<volist name="cate" id="vo">
+							<option value="{$vo.id}" <if condition="$vo['id'] eq $user['cate_id']">selected</if>>{$vo.name}</option>
+
+						</volist>
+						</select>
+						<label>标题</label>
+						<input type="text" class="input-xlarge" name="title" value="{$user.title}">
+						<label>原价格</label>
+						<input type="text" class="input-xlarge" value="{$user.a_price}" name="a_price" >
+						<label>优惠价</label>
+						<input type="text" class="input-xlarge" name="b_price" value="{$user.b_price}">
+						<label>是否推进</label>
+						<select name="is_show">
+							<option <eq name="user.is_show" value="1">selected</eq> value="1">是</option>
+							<option <eq name="user.is_show" value="2">selected</eq> value="2">否</option></eq>
+							
+						</select>
+						<label>音 频</label>
+						<input type="text" class="input-xlarge" name="audio" value="{$user.audio}"><input type="file"  name="audio">
+						<label>图 片</label>
+						<input type="text" class="input-xlarge" name="pictrue" value="{$user.pictrue}"><input type="file"  name="photo">
+						<label>文章详情</label>
+						<textarea name="article">{$user.article}</textarea>
+
+						<div>
+							<input type="hidden" value="{$user.id}" name="class_id">
+							<button class="btn btn-primary" type="submit">修改</button>
+						</div>
+					</form>
+					</div>
+				  </div>
+				</div>  
+<include file="Public/footer"/> 				
+            </div>
+        </div>
+    </div>
+
+</block>
+

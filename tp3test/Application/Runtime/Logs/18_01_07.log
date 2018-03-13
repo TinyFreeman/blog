@@ -1,0 +1,570 @@
+[ 2018-01-07T00:43:25+08:00 ] 106.120.160.109 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+
+[ 2018-01-07T04:35:01+08:00 ] 140.207.54.79 /index.php/Home/Wx/index?signature=a48d0175dc6ff2f88cdf328d2da9a592627147ed&timestamp=1515270901&nonce=1914280285&openid=oonEi02662fBhZjbEiRkm9SMzkXY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+NOTIC: [2] Missing argument 2 for Home\Util\Wechat::getUserInfo(), called in /alidata/www/default/suce/Application/Home/Controller/WxController.class.php on line 35 and defined /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2163 行.
+NOTIC: [8] Undefined variable: access_token /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2164 行.
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000832s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi02662fBhZjbEiRkm9SMzkXY' ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: INSERT INTO `wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`type`) VALUES ('oonEi02662fBhZjbEiRkm9SMzkXY','Victoria_Z','http://wx.qlogo.cn/mmopen/6e3Y540PbicRGEymwZsngDd6ZSEwtA5JRGJlLibEAVHibxibl1R9rWOFaq5IkE4n5ORq2icMdeeOohlP5iaJ6qmqriaEicLXSFTwwWk0/0',2,1,1) [ RunTime:0.008405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2018-01-07T04:35:01+08:00 ] 140.207.54.79 /index.php/Home/Wx/index?signature=69a34ba8545a1186694dc0d65ab9130a596ef11f&timestamp=1515270901&nonce=1848276033&openid=oonEi02662fBhZjbEiRkm9SMzkXY
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000542s ]
+
+[ 2018-01-07T04:35:03+08:00 ] 219.239.227.250 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-01-07T04:35:05+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000865s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi02662fBhZjbEiRkm9SMzkXY' ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002728s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2018-01-07T04:35:11+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000790s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002382s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-01-07T04:35:15+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000778s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000589s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002484s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-01-07T04:35:19+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000789s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002344s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-01-07T04:35:21+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.001174s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002490s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2018-01-07T04:35:26+08:00 ] 219.239.227.250 /index.php/Home/Question/index?code=071dKEgM16d5l51CoggM1IDKgM1dKEgC&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000775s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000516s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002567s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-01-07T04:36:02+08:00 ] 120.204.17.73 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-01-07T04:36:14+08:00 ] 101.226.65.107 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+
+[ 2018-01-07T05:23:22+08:00 ] 106.11.226.124 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-01-07T06:54:12+08:00 ] 171.13.14.147 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+
+[ 2018-01-07T06:54:13+08:00 ] 101.199.108.51 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+
+[ 2018-01-07T13:09:45+08:00 ] 140.207.54.75 /index.php/Home/Wx/index?signature=7f4f2aa18857b310e33ff041ec795ec6cf0dff97&timestamp=1515301785&nonce=1631405352&openid=oonEi04nBVDKwzylTw9AffoLM76U
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-01-07T13:09:46+08:00 ] 72.227.136.136 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000779s ]
+
+[ 2018-01-07T13:09:49+08:00 ] 72.227.136.136 /index.php/Home/Question/index?code=021Ekh0h2z0RzH0ZF14h2kBB0h2Ekh0C&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000967s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000540s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000538s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002871s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2018-01-07T13:09:49+08:00 ] 72.227.136.136 /index.php/Home/Question/index?code=021R6Y111fZSG02DpE111KWW111R6Y1E&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000880s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000578s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002844s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-01-07T13:10:13+08:00 ] 72.227.136.136 /index.php/Home/Question/index?code=021R6Y111fZSG02DpE111KWW111R6Y1E&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000849s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000877s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002682s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2018-01-07T13:10:14+08:00 ] 72.227.136.136 /index.php/Home/Question/index?code=021R6Y111fZSG02DpE111KWW111R6Y1E&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000962s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000566s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002588s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2018-01-07T13:10:15+08:00 ] 72.227.136.136 /index.php/Home/Question/index?code=021R6Y111fZSG02DpE111KWW111R6Y1E&state=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000766s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT * FROM `wx_user` WHERE ( type=2 )  [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002481s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2018-01-07T13:10:16+08:00 ] 72.227.136.136 /index.php/Home/XueTang/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000847s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `admin_classcate` [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `admin_class` [ RunTime:0.000745s ]
+SQL: SELECT * FROM `admin_classcate` ORDER BY id asc  [ RunTime:0.000531s ]
+SQL: SELECT * FROM `admin_class`  [ RunTime:0.000656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003960s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2018-01-07T13:10:17+08:00 ] 72.227.136.136 /index.php/Home/Personal/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000868s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000553s ]
+NOTIC: [8] Undefined index: userinfo /alidata/www/default/suce/Application/Home/Controller/PersonalController.class.php 第 10 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined index: userinfo /alidata/www/default/suce/Application/Runtime/Cache/Home/b8ea548555a08cb52a7260555a92d996.php 第 26 行.
+NOTIC: [8] Undefined index: userinfo /alidata/www/default/suce/Application/Runtime/Cache/Home/b8ea548555a08cb52a7260555a92d996.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002391s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-01-07T13:10:32+08:00 ] 72.227.136.136 /index.php/Home/XueTang/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000960s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.016698s ]
+SQL: SHOW COLUMNS FROM `admin_classcate` [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `admin_class` [ RunTime:0.000758s ]
+SQL: SELECT * FROM `admin_classcate` ORDER BY id asc  [ RunTime:0.000525s ]
+SQL: SELECT * FROM `admin_class`  [ RunTime:0.000535s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003719s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002178s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-01-07T13:10:33+08:00 ] 72.227.136.136 /index.php/Home/XueTang/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000822s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi04nBVDKwzylTw9AffoLM76U' ) LIMIT 1   [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `admin_classcate` [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `admin_class` [ RunTime:0.000725s ]
+SQL: SELECT * FROM `admin_classcate` ORDER BY id asc  [ RunTime:0.000473s ]
+SQL: SELECT * FROM `admin_class`  [ RunTime:0.000520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 63 行.
+NOTIC: [8] Undefined index: b_pirce /alidata/www/default/suce/Application/Runtime/Cache/Home/1a8c9d7f80241130a93dc4c32df58398.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.003862s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+

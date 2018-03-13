@@ -1,0 +1,32 @@
+<extend name="Base/common" />
+<block name="body">
+    <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">编辑权限</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+				<div class="well">
+					<div id="myTabContent" class="tab-content">
+					<div class="tab-pane active in" id="home">
+					<form id="tab" action="" method="post" >
+						<volist name="authority" id="vo">
+							<label>{$key} <input type="checkbox" name="authority[]" value="{$vo}" <if condition="in_array($vo, $role_authority)">checked</if> /></label>
+						</volist>						
+						<div>
+							<input type="hidden" name="roleid" value="{$roleid}" />
+							<button class="btn btn-primary" type="submit">提交</button>
+						</div>
+					</form>
+					</div>
+				  </div>
+				</div>            
+            </div>
+        </div>
+    </div>
+
+</block>
+

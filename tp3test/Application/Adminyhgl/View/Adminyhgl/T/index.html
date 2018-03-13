@@ -1,0 +1,89 @@
+<extend name="Base/common" />
+<block name="body">
+ <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">广告位管理</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+	<form action="{:U('index')}" method="get" style="float:right;">
+		t:<input type="text" style="width: 130px;" name='t' value="{:urldecode($map['t'])}" />	
+		广告位名称:<input type="text" style="width: 130px;" name='name' value="{:urldecode($map['name'])}" />	
+		<if condition="$is_super_admin">推广商:<input type="text" style="width: 130px;" name='tgs' value="{:urldecode($map['tgs'])}" /></if>
+		<button class="btn btn-primary" type="submit" style="margin-bottom:10px;">搜索</button>
+		<div class="btn-group">
+		</div>
+	</form>
+    <a class="btn btn-primary" href="{:U('add')}" style="float:left;"><i class="icon-plus"></i>添加广告位</a>
+	<div class="btn-group">
+	</div>
+</div>
+<div class="well" style="margin-top:20px;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>t</th>
+		  <th>广告位名称</th>
+		  <th>推广商</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+	  <volist name="list" id="vo">
+        <tr>
+          <td>{$vo.id}</td>
+		  <td>{$vo.name}</td>
+		  <td>{$vo.tgs}</td>
+          <td>
+			  <a href="{:U('WX/index_t', array('t' => $vo['id']))}">微信号管理</a>&nbsp;&nbsp;
+			  <a href="{:U('T/adurl', array('t' => $vo['id']))}">推广链接</a>&nbsp;&nbsp;
+              <a href="{:U('update', array('id' => $vo['id']))}"><i class="icon-pencil"></i></a>&nbsp;&nbsp;
+              <a onclick="javascript:return del();" href="{:U('del', array('id' => $vo['id']))}"><i class="icon-remove"></i></a>
+          </td>
+        </tr>
+	  </volist>
+      </tbody>
+    </table>
+</div>
+<script language="javascript"> 
+    function del() {
+	var msg = "您真的确定要删除吗？\n\n请确认！";
+	if (confirm(msg)==true){
+	return true;
+	}else{
+	return false;
+	}
+	}
+
+</script>
+
+{$page}
+
+<div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Delete Confirmation</h3>
+    </div>
+    <div class="modal-body">
+        <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+    </div>
+</div>
+
+
+        <include file="Public/footer"/>          
+
+                    
+            </div>
+        </div>
+    </div>
+</block>
+

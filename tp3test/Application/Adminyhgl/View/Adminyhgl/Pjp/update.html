@@ -1,0 +1,37 @@
+<extend name="Base/common" />
+<block name="body">
+    <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">修改支付跳转渠道</h1>
+        </div>
+        
+
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+				<div class="well">
+					<div id="myTabContent" class="tab-content">
+					<div class="tab-pane active in" id="home">
+					<form id="tab" action="" method="post" enctype="multipart/form-data">
+						 
+					 
+						<label>调换前</label>
+						<input type="text" class="input-xlarge" value="{$pj.p_go}" name="p_go">
+						 <label>调换后</label>
+						<input type="text" class="input-xlarge" value="{$pj.p_to}" name="p_to">
+						<input type="hidden"   value="{$pj.Id}" name="Id">
+						<div>	
+							<button class="btn btn-primary" type="submit">修改</button>
+						</div>
+					</form>
+					</div>
+				  </div>
+				</div>            
+            </div>
+        </div>
+    </div>
+
+</block>
+

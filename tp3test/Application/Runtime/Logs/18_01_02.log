@@ -1,0 +1,120 @@
+[ 2018-01-02T04:13:43+08:00 ] 106.11.227.63 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-01-02T09:21:38+08:00 ] 140.207.54.79 /index.php/Home/Wx/index?signature=5eaf4800379649f2edc96637d8a3bfa8227e7042&timestamp=1514856098&nonce=1415076086&openid=oonEi0whKrpnRO46qKY3GYI3NV3E
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000843s ]
+SQL: UPDATE `wx_user` SET `subscribe`=0 WHERE ( openid='oonEi0whKrpnRO46qKY3GYI3NV3E' ) [ RunTime:0.000532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-01-02T09:21:43+08:00 ] 140.207.54.80 /index.php/Home/Wx/index?signature=c5f424d1ad3a2fe5a8b11bc2335511facf524e44&timestamp=1514856103&nonce=1061452621&openid=oonEi0whKrpnRO46qKY3GYI3NV3E
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [2] Missing argument 2 for Home\Util\Wechat::getUserInfo(), called in /alidata/www/default/suce/Application/Home/Controller/WxController.class.php on line 32 and defined /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2164 行.
+NOTIC: [8] Undefined variable: access_token /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2165 行.
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000880s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi0whKrpnRO46qKY3GYI3NV3E' ) LIMIT 1   [ RunTime:0.000567s ]
+SQL: INSERT INTO `wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`type`) VALUES ('oonEi0whKrpnRO46qKY3GYI3NV3E','L','http://wx.qlogo.cn/mmopen/6e3Y540PbicQdpMmRUkoKm2zSfcVXAKhL5gsSGZXSbkPmzjD15bT3NuEKe0djXQJu3O4AsKYJlDcibARcmwapnCeib63Kusibiapw/0',1,1,1) [ RunTime:0.002983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-01-02T09:55:06+08:00 ] 220.173.38.48 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+ERR: 无法加载控制器:Question
+
+[ 2018-01-02T09:55:58+08:00 ] 220.173.38.48 /index.php/Home/Question/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+ERR: 无法加载控制器:Question
+
+[ 2018-01-02T10:26:50+08:00 ] 61.151.178.165 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-01-02T15:29:00+08:00 ] 140.207.54.80 /index.php/Home/Wx/index?signature=5d3624caeb3cb7ef1c983d8b951c5930aa45d54e&timestamp=1514878139&nonce=1886027475&openid=oonEi0wGShPZDygUyP853VUNWXNc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000997s ]
+SQL: UPDATE `wx_user` SET `subscribe`=0 WHERE ( openid='oonEi0wGShPZDygUyP853VUNWXNc' ) [ RunTime:0.004385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2018-01-02T15:29:37+08:00 ] 140.207.54.80 /index.php/Home/Wx/index?signature=0d8bb673d58ad89a4df129b7e25fa4539a552ba5&timestamp=1514878176&nonce=1267624915&openid=oonEi0wGShPZDygUyP853VUNWXNc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+NOTIC: [2] Missing argument 2 for Home\Util\Wechat::getUserInfo(), called in /alidata/www/default/suce/Application/Home/Controller/WxController.class.php on line 32 and defined /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2164 行.
+NOTIC: [8] Undefined variable: access_token /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2165 行.
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.002751s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi0wGShPZDygUyP853VUNWXNc' ) LIMIT 1   [ RunTime:0.003074s ]
+SQL: INSERT INTO `wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`type`) VALUES ('oonEi0wGShPZDygUyP853VUNWXNc','A啊栋','http://wx.qlogo.cn/mmopen/ajNVdqHZLLAibCic3t1P1CXQpTiaEJ1x2gVxwWdhwJKhfoibPX43zXdxYMbU2xlkrGoBxMdDkzawcdYtxEn3wTpldj1mSgS02BZHERnqbicEl1xY/0',1,1,1) [ RunTime:0.007900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-01-02T15:30:35+08:00 ] 140.207.54.80 /index.php/Home/Wx/index?signature=09f44c1461e20ea50526366997fb8b6d376171f9&timestamp=1514878235&nonce=350615425&openid=oonEi0wGShPZDygUyP853VUNWXNc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000951s ]
+SQL: UPDATE `wx_user` SET `subscribe`=0 WHERE ( openid='oonEi0wGShPZDygUyP853VUNWXNc' ) [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2018-01-02T15:30:41+08:00 ] 140.207.54.79 /index.php/Home/Wx/index?signature=83f1002f357215ec58cc824191d0f741d1b574a6&timestamp=1514878241&nonce=963363859&openid=oonEi0wGShPZDygUyP853VUNWXNc
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2] Missing argument 2 for Home\Util\Wechat::getUserInfo(), called in /alidata/www/default/suce/Application/Home/Controller/WxController.class.php on line 32 and defined /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2164 行.
+NOTIC: [8] Undefined variable: access_token /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2165 行.
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000851s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi0wGShPZDygUyP853VUNWXNc' ) LIMIT 1   [ RunTime:0.000522s ]
+SQL: INSERT INTO `wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`type`) VALUES ('oonEi0wGShPZDygUyP853VUNWXNc','A啊栋','http://wx.qlogo.cn/mmopen/ajNVdqHZLLAibCic3t1P1CXQpTiaEJ1x2gVxwWdhwJKhfoibPX43zXdxYMbU2xlkrGoBxMdDkzawcdYtxEn3wTpldj1mSgS02BZHERnqbicEl1xY/0',1,1,1) [ RunTime:0.007474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2018-01-02T15:31:42+08:00 ] 140.207.54.80 /index.php/Home/Wx/index?signature=6cc5c6e48c04ff7c643b18f8ead110569332384a&timestamp=1514878302&nonce=682656103&openid=oonEi0whKrpnRO46qKY3GYI3NV3E
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000803s ]
+SQL: UPDATE `wx_user` SET `subscribe`=0 WHERE ( openid='oonEi0whKrpnRO46qKY3GYI3NV3E' ) [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2018-01-02T15:31:53+08:00 ] 140.207.54.79 /index.php/Home/Wx/index?signature=6aefcd132045b7489033b9d562b056d0192acafb&timestamp=1514878313&nonce=353615058&openid=oonEi0whKrpnRO46qKY3GYI3NV3E
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [2] Missing argument 2 for Home\Util\Wechat::getUserInfo(), called in /alidata/www/default/suce/Application/Home/Controller/WxController.class.php on line 32 and defined /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2164 行.
+NOTIC: [8] Undefined variable: access_token /alidata/www/default/suce/Application/Home/Util/Wechat.class.php 第 2165 行.
+SQL: SHOW COLUMNS FROM `wx_user` [ RunTime:0.000871s ]
+SQL: SELECT * FROM `wx_user` WHERE ( openid='oonEi0whKrpnRO46qKY3GYI3NV3E' ) LIMIT 1   [ RunTime:0.000556s ]
+SQL: INSERT INTO `wx_user` (`openid`,`nickname`,`headimgurl`,`sex`,`subscribe`,`type`) VALUES ('oonEi0whKrpnRO46qKY3GYI3NV3E','L','http://wx.qlogo.cn/mmopen/6e3Y540PbicQdpMmRUkoKm2zSfcVXAKhL5gsSGZXSbkPmzjD15bT3NuEKe0djXQJu3O4AsKYJlDcibARcmwapnCeib63Kusibiapw/0',1,1,1) [ RunTime:0.003651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+

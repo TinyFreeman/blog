@@ -1,0 +1,56 @@
+
+<extend name="Base/common" />
+<block name="body">
+ <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">学堂列表</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+	
+    <a class="btn btn-primary" href="{:U('addCate')}"><i class="icon-plus"></i>添加分类</a>
+	<div class="btn-group">
+	</div>
+</div>
+<div class="well">
+    <table class="table">
+      <thead>
+        <tr>
+            <td>id</td>
+			<td>分类名</td>
+			<td>操作</td>
+			
+        </tr>
+      </thead>
+      <tbody>
+	  <volist name="list" id="vo">
+        <tr>
+          <tr>
+			<td>{$vo.id}</td>
+			<td>{$vo.name}</td>
+          <td>
+              <a href="{:U('editCate', array('id' => $vo['id']))}"><i class="icon-pencil"></i></a>
+              <a href="{:U('delCate', array('id' => $vo['id']))}"  ><i class="icon-remove"></i></a>
+          </td>
+        </tr>
+	  </volist>
+      </tbody>
+    </table>
+</div>
+
+
+{$page}
+
+        <include file="Public/footer"/>          
+
+                    
+            </div>
+        </div>
+    </div>
+</block>
+

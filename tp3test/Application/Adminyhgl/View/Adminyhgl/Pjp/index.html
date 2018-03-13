@@ -1,0 +1,52 @@
+<extend name="Base/common" />
+<block name="body">
+ <div class="content">
+        
+        <div class="header">
+            
+            <h1 class="page-title">PC电脑支付渠道跳转管理</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+    <form id="tab" action="" method="post" enctype="multipart/form-data">                
+ <label>切换跳转支付</label>
+            <select name="p">
+                <option value="0"  <if condition="$pj['p'] eq 0">selected="selected"</if>>不切换</option>  
+                <option value="1" <if condition="$pj['p'] eq 1">selected="selected"</if>>生态扫码</option>
+                <option value="9" <if condition="$pj['p'] eq 9">selected="selected"</if>>格瑞支付</option>
+                <option value="6" <if condition="$pj['p'] eq 6">selected="selected"</if>>现在支付</option>
+                <option value="11" <if condition="$pj['p'] eq 11">selected="selected"</if>>生态QQ扫码支付</option>
+               
+            </select>
+            <input type="hidden" value="1" name="Id">
+           <div>  
+              <button class="btn btn-primary" type="submit">修改</button>
+            </div>
+    </form>
+
+
+
+<div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Delete Confirmation</h3>
+    </div>
+    <div class="modal-body">
+        <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+    </div>
+</div>
+
+
+        <include file="Public/footer"/>          
+
+                    
+            </div>
+        </div>
+    </div>
+</block>
+
