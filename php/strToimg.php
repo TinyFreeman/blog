@@ -2,7 +2,7 @@
    //1213213131312313 
 
 
-    //文字图片 合成123456
+    //文字图片 合成
     public function strToimg()
     {
         header("Content-type:text/html;charset=utf-8");
